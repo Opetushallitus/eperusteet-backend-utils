@@ -45,7 +45,7 @@
         <hibernate.version>4.3.11.Final</hibernate.version>
         <jackson.version>2.12.2</jackson.version>
         <spring.version>5.3.26</spring.version>
-        <spring.security.version>5.8.1</spring.security.version>
+        <spring.security.version>5.8.12</spring.security.version>
         <aspectj.version>1.8.9</aspectj.version>
         <audit.logger.version>8.3.1-SNAPSHOT</audit.logger.version>
         <javax.servet.version>3.0.1</javax.servet.version>
