@@ -20,12 +20,15 @@ jobs:
           distribution: 'corretto'
 
       - name: Package
-        run: mvn clean package
+        run: | 
+          mvn clean deploy
+          cd services-parent-pom
+          mvn clean deploy
 
-      - name: Publish snapshot
-        if: ${{ success() && github.ref_name != 'master' }}
-        run: mvn deploy --batch-mode -DskipTests
-      - name: Release
-        if: ${{ success() && github.ref_name == 'master' }}
-        run: |
-          mvn release:clean release:prepare release:perform -DignoreSnapshots=true
+      #- name: Publish snapshot
+      #  if: ${{ success() && github.ref_name != 'master' }}
+      #  run: mvn deploy --batch-mode -DskipTests
+      #- name: Release
+      #  if: ${{ success() && github.ref_name == 'master' }}
+      #  run: |
+      #    mvn release:clean release:prepare release:perform -DignoreSnapshots=true
