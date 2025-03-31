@@ -23,7 +23,7 @@ jobs:
         if: ${{ success() && github.ref_name == 'master' }}
         run: | 
           cd services-parent-pom
-          mvn versions:set -DnewVersion=1.0.${{ github.run_number }}
+          mvn release:clean release:prepare release:perform -B -DignoreSnapshots=true
 
       - name: Package
         run: | 
