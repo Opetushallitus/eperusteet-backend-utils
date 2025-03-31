@@ -213,10 +213,10 @@
 	</repositories>
 	
 	<scm>
-		<url>https://github.com/opetushallitus/eperusteet-backend-utils</url>
+        <url>https://github.com/opetushallitus/eperusteet-backend-utils</url>
 		<connection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</connection>
 		<developerConnection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+	    <tag>HEAD</tag>
+    </scm>
 	
 </project>
