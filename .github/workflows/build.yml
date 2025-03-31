@@ -22,15 +22,9 @@ jobs:
       - name: Package
         run: | 
           mvn clean deploy
-          cd services-parent-pom
-          mvn clean deploy
           
       - name: deploy services-parent-pom
-        if: ${{ github.ref_name == 'master' }}
+        if: ${{ github.ref_name != 'master' }}
         run: |
           cd services-parent-pom        
-          CURRENT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
-          RELEASE_VERSION=$(echo $CURRENT_VERSION | sed 's/-SNAPSHOT//')
-          echo "RELEASE_VERSION=$RELEASE_VERSION" >> $GITHUB_ENV
-          mvn versions:set -DnewVersion=${{ env.RELEASE_VERSION }} -DgenerateBackupPoms=false
           mvn clean deploy
