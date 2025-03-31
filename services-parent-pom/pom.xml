@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.1.1</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -875,10 +875,4 @@
         </repository>
     </repositories>
 
-    <scm>
-        <url>https://github.com/opetushallitus/eperusteet-backend-utils</url>
-        <connection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</connection>
-        <developerConnection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
 </project>
