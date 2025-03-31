@@ -20,13 +20,11 @@ jobs:
           distribution: 'corretto'
 
       - name: deploy services-parent-pom
-        if: ${{ success() && github.ref_name == 'master' }}
+        if: github.ref_name != 'master' }}
         run: | 
           cd services-parent-pom
-          mvn release:clean release:prepare release:perform -B -DignoreSnapshots=true
+          mvn clean deploy
 
       - name: Package
         run: | 
-          mvn clean deploy
-          cd services-parent-pom
           mvn clean deploy
