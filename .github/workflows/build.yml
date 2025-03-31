@@ -19,16 +19,14 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
+      - name: deploy services-parent-pom
+        if: ${{ success() && github.ref_name == 'master' }}
+        run: | 
+          cd services-parent-pom
+          mvn versions:set -DnewVersion=1.0.${{ github.run_number }}
+
       - name: Package
         run: | 
           mvn clean deploy
           cd services-parent-pom
           mvn clean deploy
-
-      #- name: Publish snapshot
-      #  if: ${{ success() && github.ref_name != 'master' }}
-      #  run: mvn deploy --batch-mode -DskipTests
-      #- name: Release
-      #  if: ${{ success() && github.ref_name == 'master' }}
-      #  run: |
-      #    mvn release:clean release:prepare release:perform -DignoreSnapshots=true
