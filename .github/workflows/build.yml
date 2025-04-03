@@ -22,10 +22,6 @@ jobs:
       - name: Package
         run: | 
           mvn clean deploy
-          cd services-parent-pom
-          CURRENT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)-snapshot
-          mvn versions:set -DnewVersion=${{ env.CURRENT_VERSION }} -DgenerateBackupPoms=false
-          mvn clean deploy
           
       - name: deploy services-parent-pom
         if: ${{ github.ref_name == 'master' }}
