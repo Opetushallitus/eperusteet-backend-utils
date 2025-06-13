@@ -43,8 +43,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.fileEncoding>UTF-8</project.build.fileEncoding>
         <hibernate.version>6.6.2.Final</hibernate.version>
-        <jackson.version>2.12.2</jackson.version>
-        <spring.version>6.1.4</spring.version>
+        <jackson.version>2.13.0</jackson.version>
+        <spring.version>6.1.21</spring.version>
         <spring.security.version>6.3.4</spring.security.version>
         <aspectj.version>1.8.9</aspectj.version>
         <audit.logger.version>8.3.1-SNAPSHOT</audit.logger.version>
