@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>3.4.6.3</version>
+    <version>3.4.6.4</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -31,7 +31,7 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven.compiler.target>17</maven.compiler.target>
         <pdfbox.version>2.0.29</pdfbox.version>
-        <postgresql.version>42.7.4</postgresql.version>
+        <postgresql.version>42.7.7</postgresql.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <schema.file>${project.basedir}/target/schema.ddl</schema.file>
         <spring.security.test.version>6.4.1</spring.security.test.version>
