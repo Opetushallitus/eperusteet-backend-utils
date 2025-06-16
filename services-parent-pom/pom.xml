@@ -439,7 +439,7 @@
             <version>2.11.0</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.commons</groupId>
+            <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.11.0</version>
         </dependency>
