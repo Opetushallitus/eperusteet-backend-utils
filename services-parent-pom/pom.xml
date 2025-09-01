@@ -5,13 +5,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.6</version>
+        <version>3.4.9</version>
         <relativePath/>
     </parent>
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>3.4.6.5</version>
+    <version>3.4.9</version>
     <packaging>pom</packaging>
 
     <properties>
