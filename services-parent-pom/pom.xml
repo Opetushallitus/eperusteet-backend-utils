@@ -18,7 +18,7 @@
         <apache.httpclient.version>4.5.13</apache.httpclient.version>
         <batik.version>1.13</batik.version>
         <buildhelper.skipAttach>true</buildhelper.skipAttach>
-        <eperusteet.backend-utils.version>2.13-SNAPSHOT</eperusteet.backend-utils.version>
+        <eperusteet.backend-utils.version>2.15-SNAPSHOT</eperusteet.backend-utils.version>
         <failsafe.version>3.2.2</failsafe.version>
         <flyway.version>9.22.3</flyway.version>
         <fop.version>2.9</fop.version>
