@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-backend-utils</artifactId>
-    <version>2.15-SNAPSHOT</version>
+    <version>2.16-SNAPSHOT</version>
     <build>
         <plugins>
             <plugin>
@@ -50,14 +50,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.fileEncoding>UTF-8</project.build.fileEncoding>
-        <hibernate.version>6.6.2.Final</hibernate.version>
-        <jackson.version>2.12.2</jackson.version>
-        <spring.version>6.1.4</spring.version>
-        <spring.security.version>6.3.4</spring.security.version>
-        <aspectj.version>1.8.9</aspectj.version>
-        <audit.logger.version>8.3.1-SNAPSHOT</audit.logger.version>
-        <slf4j.version>1.7.21</slf4j.version>
         <sade.java-utils.version>1.0.0-SNAPSHOT</sade.java-utils.version>
+        <audit.logger.version>8.3.1-SNAPSHOT</audit.logger.version>
         <commons-collections.version>3.2.2</commons-collections.version>
     </properties>
     <dependencies>
@@ -154,7 +148,6 @@
             <version>${commons-collections.version}</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 	
 	<distributionManagement>
