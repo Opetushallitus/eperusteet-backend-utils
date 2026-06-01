@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>3.5.14</version>
+    <version>3.5.14-2</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -25,21 +25,22 @@
         <hibernate.export.type>CREATE</hibernate.export.type>
         <hibernate.version>6.6.4.Final</hibernate.version>
         <jackson.version>2.15.4</jackson.version>
-        <jacoco.version>0.8.12</jacoco.version>
+        <jacoco.version>0.8.14</jacoco.version>
         <jsoup.version>1.15.3</jsoup.version>
         <lombok.version>1.18.34</lombok.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven.compiler.target>17</maven.compiler.target>
         <pdfbox.version>2.0.29</pdfbox.version>
-        <postgresql.version>42.7.7</postgresql.version>
+        <postgresql.version>42.7.11</postgresql.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <schema.file>${project.basedir}/target/schema.ddl</schema.file>
         <spring.security.test.version>6.4.1</spring.security.test.version>
         <spring.session.jdbc.version>2.4.3</spring.session.jdbc.version>
         <springdoc.version>2.7.0</springdoc.version>
         <surefire.version>3.2.2</surefire.version>
-        <netty.codec.http2.version>4.1.124.Final</netty.codec.http2.version>
+        <netty.codec.version>4.1.134.Final</netty.codec.http.version>
         <commong-lang3.version>3.18.0</commong-lang3.version>
+        <tomcat-embed-core.version>10.1.55</tomcat-embed-core.version>
     </properties>
     <dependencies>
         <dependency>
@@ -448,7 +449,22 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-codec-http2</artifactId>
-            <version>${netty.codec.http2.version}</version>
+            <version>${netty.codec.version}</version>
+        </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec-http</artifactId>
+            <version>${netty.codec.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec/artifactId>
+            <version>${netty.codec.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat-embed-core.version}</version>
         </dependency>
     </dependencies>
     <build>
