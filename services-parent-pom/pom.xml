@@ -38,7 +38,7 @@
         <spring.session.jdbc.version>2.4.3</spring.session.jdbc.version>
         <springdoc.version>2.7.0</springdoc.version>
         <surefire.version>3.2.2</surefire.version>
-        <netty.codec.version>4.1.134.Final</netty.codec.http.version>
+        <netty.codec.version>4.1.134.Final</netty.codec.version>
         <commong-lang3.version>3.18.0</commong-lang3.version>
         <tomcat-embed-core.version>10.1.55</tomcat-embed-core.version>
     </properties>
