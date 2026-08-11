@@ -9,7 +9,8 @@ jobs:
       packages: write
     env:
       GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      MAVEN_ARGS: -s ${{ github.workspace }}/.github/maven/settings.xml
     steps:
       - uses: actions/checkout@v4
 
@@ -20,11 +21,8 @@ jobs:
           distribution: 'corretto'
 
       - name: Package
-        run: | 
-          mvn clean deploy
-          
+        run: mvn --batch-mode clean deploy
+
       - name: deploy services-parent-pom
         if: ${{ github.ref_name == 'master' }}
-        run: |
-          cd services-parent-pom        
-          mvn clean deploy
+        run: mvn --batch-mode -f services-parent-pom/pom.xml clean deploy
