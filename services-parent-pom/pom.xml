@@ -11,14 +11,14 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>3.5.16-4</version>
+    <version>3.5.16-5</version>
     <packaging>pom</packaging>
 
     <properties>
         <apache.httpclient.version>4.5.13</apache.httpclient.version>
         <batik.version>1.13</batik.version>
         <buildhelper.skipAttach>true</buildhelper.skipAttach>
-        <eperusteet.backend-utils.version>2.20-SNAPSHOT</eperusteet.backend-utils.version>
+        <eperusteet.backend-utils.version>2.21-SNAPSHOT</eperusteet.backend-utils.version>
         <failsafe.version>3.2.2</failsafe.version>
         <flyway.version>9.22.3</flyway.version>
         <fop.version>2.9</fop.version>
@@ -837,31 +837,11 @@
 
     <repositories>
         <repository>
-            <releases>
-                <enabled>false</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots>
             <id>github-eperusteet-backend-utils</id>
             <name>GitHub Packages</name>
             <url>https://maven.pkg.github.com/Opetushallitus/eperusteet-backend-utils</url>
         </repository>
         <repository>
-            <!-- <releases>
-                <enabled>false</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots> -->
             <id>github-java-utils</id>
             <name>java-utils GitHub Packages</name>
             <url>https://maven.pkg.github.com/Opetushallitus/java-utils</url>
@@ -871,21 +851,6 @@
             <name>auditlogger GitHub Packages</name>
             <url>https://maven.pkg.github.com/Opetushallitus/auditlogger</url>
         </repository>
-        <repository>
-            <id>github-eperusteet-backend-utils</id>
-            <name>GitHub Packages eperusteet-backend-utils-maven-repo</name>
-            <url>https://maven.pkg.github.com/Opetushallitus/eperusteet-backend-utils</url>
-        </repository>
-        <!-- <repository> -->
-            <!-- <id>oph-sade-artifactory-snapshots</id> -->
-            <!-- <url>https://artifactory.opintopolku.fi/artifactory/oph-sade-snapshot-local</url> -->
-            <!-- <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases> -->
-        <!-- </repository> -->
     </repositories>
 
 </project>

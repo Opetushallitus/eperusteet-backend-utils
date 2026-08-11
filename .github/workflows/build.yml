@@ -19,6 +19,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'corretto'
+          cache: 'maven'
 
       - name: Package
         run: mvn --batch-mode clean deploy
