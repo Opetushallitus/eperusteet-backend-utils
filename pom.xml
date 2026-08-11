@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-backend-utils</artifactId>
-    <version>2.20-SNAPSHOT</version>
+    <version>2.21-SNAPSHOT</version>
     <build>
         <plugins>
             <plugin>
@@ -172,16 +172,6 @@
 
 	<repositories>
         <repository>
-            <!-- <releases>
-                <enabled>false</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots> -->
             <id>github-java-utils</id>
             <name>java-utils GitHub Packages</name>
             <url>https://maven.pkg.github.com/Opetushallitus/java-utils</url>
@@ -193,11 +183,11 @@
         </repository>
 	</repositories>
 	
-	<scm>
-        <url>https://github.com/opetushallitus/eperusteet-backend-utils</url>
-		<connection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</connection>
-		<developerConnection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</developerConnection>
-	    <tag>HEAD</tag>
-    </scm>
+  <scm>
+    <url>https://github.com/opetushallitus/eperusteet-backend-utils</url>
+    <connection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</connection>
+    <developerConnection>scm:git:https://github.com/opetushallitus/eperusteet-backend-utils.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 	
 </project>
