@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>3.5.16-5</version>
+    <version>3.5.16-6</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -31,14 +31,17 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven.compiler.target>17</maven.compiler.target>
         <pdfbox.version>2.0.29</pdfbox.version>
-        <postgresql.version>42.7.11</postgresql.version>
+        <postgresql.version>42.7.12</postgresql.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <schema.file>${project.basedir}/target/schema.ddl</schema.file>
         <spring.security.test.version>6.4.1</spring.security.test.version>
         <spring.session.jdbc.version>2.4.3</spring.session.jdbc.version>
         <springdoc.version>2.7.0</springdoc.version>
         <surefire.version>3.2.2</surefire.version>
-        <netty.codec.version>4.1.134.Final</netty.codec.version>
+        <netty.version>4.1.137.Final</netty.version>
+        <netty.codec.version>4.1.137.Final</netty.codec.version>
+        <httpcore5.version>5.4.3</httpcore5.version>
+        <plexus-utils.version>3.6.1</plexus-utils.version>
         <commong-lang3.version>3.18.0</commong-lang3.version>
         <tomcat-embed-core.version>10.1.55</tomcat-embed-core.version>
     </properties>
@@ -451,7 +454,7 @@
             <artifactId>netty-codec-http2</artifactId>
             <version>${netty.codec.version}</version>
         </dependency>
-         <dependency>
+        <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-codec-http</artifactId>
             <version>${netty.codec.version}</version>
@@ -460,6 +463,21 @@
             <groupId>io.netty</groupId>
             <artifactId>netty-codec</artifactId>
             <version>${netty.codec.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents.core5</groupId>
+            <artifactId>httpcore5</artifactId>
+            <version>${httpcore5.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents.core5</groupId>
+            <artifactId>httpcore5-h2</artifactId>
+            <version>${httpcore5.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>${plexus-utils.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
