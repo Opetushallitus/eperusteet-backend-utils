@@ -19,7 +19,14 @@ jobs:
         with:
           java-version: '17'
           distribution: 'corretto'
-          cache: 'maven'
+
+      - name: Cache Maven repository
+        uses: actions/cache@v6
+        with:
+          path: ~/.m2/repository
+          key: maven-${{ runner.os }}-${{ hashFiles('pom.xml', 'services-parent-pom/pom.xml') }}
+          restore-keys: |
+            maven-${{ runner.os }}-
 
       - name: Package
         run: mvn --batch-mode clean deploy
