@@ -11,14 +11,14 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>4.1.1-1</version>
+    <version>4.1.1-2</version>
     <packaging>pom</packaging>
 
     <properties>
         <apache.httpclient.version>4.5.13</apache.httpclient.version>
         <batik.version>1.13</batik.version>
         <buildhelper.skipAttach>true</buildhelper.skipAttach>
-        <eperusteet.backend-utils.version>3.0-SNAPSHOT</eperusteet.backend-utils.version>
+        <eperusteet.backend-utils.version>3.1-SNAPSHOT</eperusteet.backend-utils.version>
         <fop.version>2.9</fop.version>
         <hibernate.export.type>CREATE</hibernate.export.type>
         <jacoco.version>0.8.14</jacoco.version>
