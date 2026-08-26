@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>4.1.1-4</version>
+    <version>4.1.1-5</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -19,7 +19,7 @@
         <batik.version>1.13</batik.version>
         <buildhelper.skipAttach>true</buildhelper.skipAttach>
         <eperusteet.backend-utils.version>3.1-SNAPSHOT</eperusteet.backend-utils.version>
-        <flyway.version>12.5.0</flyway.version>
+        <flyway.version>12.11.0</flyway.version>
         <fop.version>2.9</fop.version>
         <hibernate.export.type>CREATE</hibernate.export.type>
         <jacoco.version>0.8.14</jacoco.version>
