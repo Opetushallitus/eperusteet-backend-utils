@@ -11,14 +11,15 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>4.1.1-5</version>
+    <version>4.1.1-6</version>
     <packaging>pom</packaging>
 
     <properties>
         <apache.httpclient.version>4.5.13</apache.httpclient.version>
         <batik.version>1.13</batik.version>
+        <bouncycastle.version>1.85</bouncycastle.version>
         <buildhelper.skipAttach>true</buildhelper.skipAttach>
-        <eperusteet.backend-utils.version>3.1-SNAPSHOT</eperusteet.backend-utils.version>
+        <eperusteet.backend-utils.version>3.2-SNAPSHOT</eperusteet.backend-utils.version>
         <flyway.version>12.11.0</flyway.version>
         <fop.version>2.9</fop.version>
         <hibernate.export.type>CREATE</hibernate.export.type>
@@ -39,6 +40,25 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-cas</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk18on</artifactId>
+            <version>${bouncycastle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpkix-jdk18on</artifactId>
+            <version>${bouncycastle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+             <artifactId>bcutil-jdk18on</artifactId>
+            <version>${bouncycastle.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
