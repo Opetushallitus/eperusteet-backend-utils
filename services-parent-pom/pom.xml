@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>4.1.1-6</version>
+    <version>4.1.1-7</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -321,17 +321,6 @@
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>${jsoup.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jasig.cas.client</groupId>
-            <artifactId>cas-client-support-distributed-ehcache</artifactId>
-            <version>3.6.4</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>net.sf.ehcache</groupId>
-                    <artifactId>ehcache-core</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
