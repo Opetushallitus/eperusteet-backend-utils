@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-backend-utils</artifactId>
-    <version>3.2-SNAPSHOT</version>
+    <version>3.3-SNAPSHOT</version>
     <build>
         <plugins>
 			<plugin>
@@ -42,7 +42,7 @@
         <bouncycastle.version>1.85</bouncycastle.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.fileEncoding>UTF-8</project.build.fileEncoding>
-        <sade.java-utils.version>1.0.0-SNAPSHOT</sade.java-utils.version>
+        <sade.java-utils.version>1.0.2-SNAPSHOT</sade.java-utils.version>
         <audit.logger.version>9.2.7-SNAPSHOT</audit.logger.version>
         <commons-collections.version>3.2.2</commons-collections.version>
         <swagger.annotations.version>2.2.28</swagger.annotations.version>

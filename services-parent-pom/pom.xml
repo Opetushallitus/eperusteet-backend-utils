@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>4.1.1-8</version>
+    <version>4.1.1-9</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -19,7 +19,7 @@
         <batik.version>1.13</batik.version>
         <bouncycastle.version>1.85</bouncycastle.version>
         <buildhelper.skipAttach>true</buildhelper.skipAttach>
-        <eperusteet.backend-utils.version>3.2-SNAPSHOT</eperusteet.backend-utils.version>
+        <eperusteet.backend-utils.version>3.3-SNAPSHOT</eperusteet.backend-utils.version>
         <flyway.version>12.11.0</flyway.version>
         <fop.version>2.9</fop.version>
         <hibernate.export.type>CREATE</hibernate.export.type>
@@ -305,7 +305,7 @@
         <dependency>
             <groupId>fi.vm.sade.java-utils</groupId>
             <artifactId>java-http</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>fi.vm.sade.java-utils</groupId>
