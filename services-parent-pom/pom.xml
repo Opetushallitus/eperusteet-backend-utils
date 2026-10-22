@@ -11,7 +11,7 @@
 
     <groupId>fi.vm.sade.eperusteet</groupId>
     <artifactId>eperusteet-parent-pom</artifactId>
-    <version>4.1.1-11</version>
+    <version>4.1.1-12</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -720,7 +720,7 @@
                 </plugins>
             </build>
         </profile>
-        <profile>
+        <profile> <!--deprecated -->
             <id>springdoc-ext</id>
             <properties>
                 <maven.test.skip>true</maven.test.skip>
