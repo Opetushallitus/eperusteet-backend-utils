@@ -41,7 +41,7 @@
     <url>http://www.oph.fi</url>
     <properties>
         <java.version>21</java.version>
-        <bouncycastle.version>1.86</bouncycastle.version>
+        <bouncycastle.version>1.87</bouncycastle.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.fileEncoding>UTF-8</project.build.fileEncoding>
         <sade.java-utils.version>1.0.2-SNAPSHOT</sade.java-utils.version>
@@ -114,11 +114,6 @@
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-annotations-jakarta</artifactId>
             <version>${swagger.annotations.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-config</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
