@@ -51,7 +51,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Override spring-security-cas transitive bouncy castle versions -->
+            <!-- Override spring-security-cas transitive bouncycastle 1.84 version -->
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk18on</artifactId>
