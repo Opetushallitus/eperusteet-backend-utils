@@ -43,9 +43,6 @@
     <properties>
         <java.version>21</java.version>
         <bouncycastle.version>1.87</bouncycastle.version>
-        <sade.java-utils.version>1.0.2-SNAPSHOT</sade.java-utils.version>
-        <audit.logger.version>9.2.7-SNAPSHOT</audit.logger.version>
-        <commons-collections.version>3.2.2</commons-collections.version>
         <swagger.annotations.version>2.2.55</swagger.annotations.version>
     </properties>
 
@@ -98,22 +95,7 @@
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -132,12 +114,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-annotations-jakarta</artifactId>
-            <version>${swagger.annotations.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
             <scope>provided</scope>
@@ -148,14 +124,14 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjtools</artifactId>
+            <groupId>io.swagger.core.v3</groupId>
+            <artifactId>swagger-annotations-jakarta</artifactId>
+            <version>2.2.55</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>fi.vm.sade</groupId>
-            <artifactId>auditlogger</artifactId>
-            <version>${audit.logger.version}</version>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -164,15 +140,22 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>fi.vm.sade.java-utils</groupId>
-            <artifactId>java-http</artifactId>
-            <version>${sade.java-utils.version}</version>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Shared OPH application libraries -->
+        <dependency>
+            <groupId>fi.vm.sade</groupId>
+            <artifactId>auditlogger</artifactId>
+            <version>9.2.7-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-            <version>${commons-collections.version}</version>
+            <groupId>fi.vm.sade.java-utils</groupId>
+            <artifactId>java-http</artifactId>
+            <version>1.0.2-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
